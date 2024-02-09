@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/nfor2000/chat-app-css-illustration-master.git)
-- Live Site URL: []( https://nfor2000.github.io/chat-app-css-illustration-master/)
+- Solution URL: [Solution Url](https://github.com/nfor2000/chat-app-css-illustration-master.git)
+- Live Site URL: [Live site]( https://nfor2000.github.io/chat-app-css-illustration-master/)
 
 ### Built with
 
