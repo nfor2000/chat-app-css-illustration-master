@@ -1,0 +1,340 @@
+@font-face {
+     font-family: 'Rubik';
+     src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+:root {
+     font-family: 'Rubik';
+     background-color: hsl(270, 20%, 96%);
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.container {
+     width: 100%;
+     margin: auto;
+}
+
+.app {
+     position: relative;
+     min-height: 65vh;
+     margin-bottom: 100px;
+}
+
+.app-bg {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 50%;
+     height: 100%;
+     border-bottom-right-radius: 9999px;
+     background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.chat-app {
+     position: absolute;
+     width: 250px;
+     top: 10%;
+     left: 20%;
+     background-color: #fff;
+     border-radius: 20px;
+     padding: 10px;
+     box-shadow: 0 15px 20px hsla(268, 7%, 64%, 0.64);
+}
+
+.chat-container {
+     width: 100%;
+     background-color: hsl(270, 20%, 96%);
+     border-radius: 20px;
+     padding-bottom: 1px;
+}
+
+.top {
+     position: relative;
+     background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+     padding:35px 10px 5px;  
+     border-radius: 20px 20px 8px 8px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.top .d-flex {
+     display: flex ;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+}
+
+.top::before {
+     content: "";
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: #fff;
+     width: 60%;
+     height: 20px;
+     border-radius:0 0 15px 15px;
+     top: 0;
+}
+
+.icon span {
+     display: block;
+     width: 3px;
+     height: 12px;
+     background-color: hsl(270, 20%, 96%);
+}
+
+.icon span:first-child {
+     transform:translateY(2px) rotateZ(220deg);
+}
+
+.icon span:last-child {
+     transform: translateY(-2px) rotateZ(-220deg);
+}
+
+.avatar {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     border: 1px solid hsl(270, 20%, 96%);
+}
+
+.person-info {
+     color: hsl(270, 20%, 96%);
+}
+
+.name {
+     font-size: 11px;
+}
+
+.dots .dot {
+     display: block;
+     width: 2px;
+     height:2px;
+     background-color: hsl(270, 20%, 96%);
+     margin-bottom: 3px;
+}
+
+.status {
+     font-size: 8px;
+     color: hsl(206, 6%, 79%);
+}
+
+
+.message-container {
+     padding: 10px;
+}
+
+.chat {
+     font-size: 9px;
+     width: max-content;
+     max-width: 70%;
+     padding: 8px;
+     margin-bottom: 10px;
+}
+
+.left-chat {
+     color: hsl(276, 55%, 52%);
+     background-color: hsl(293, 33%, 90%);
+     border-radius: 10px 10px 10px 5px;
+}
+
+.right-chat {
+     color: hsl(271, 15%, 43%);
+     background-color: hsl(0, 0%, 100%);
+     padding: 8px;
+     border-radius: 10px 10px 5px 10px;
+}
+
+.pictures {
+     width: max-content;
+     max-width: 70%;
+}
+
+.img-dog {
+     height: 30px;
+     width: 30px;
+     border-radius: 5px;
+}
+
+.float-right {
+     margin-right: 0;
+     margin-left: auto;
+}
+
+.pricing {
+     max-width: 80%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+     background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+     margin-bottom: 10px;
+     border-radius: 10px 10px 10px 5px;
+     color: hsl(0, 0%, 100%);
+}
+
+.walk-info {
+     display: flex;
+     gap:8px;
+     align-items: center;
+}
+
+.walk-info .circle {
+     width: 15px;
+     height: 15px;
+     border: 1px solid hsl(0, 0%, 100%);
+     border-radius: 50%;
+}
+
+.walk-info p {
+     font-size: 8px;
+}
+
+.price {
+     font-size: 13px;
+     font-weight: 600;
+}
+
+.input-group {
+     display: grid;
+     grid-template-columns: 90% 10%;
+     align-items: center;
+     border-radius: 20px;
+     height: 40px;
+     background-color: hsl(0, 0%, 100%);
+     padding:0 10px;
+     margin:0 10px 10px;
+}
+
+.input-group input {
+     border: none;
+     background-color: transparent;
+     outline: none;
+     padding-inline: 10px;
+     font-size: 10px;
+     width: 100%;
+     color: hsl(271, 36%, 24%);
+}
+
+.input-group input::placeholder {
+     color: hsl(206, 6%, 79%);
+}
+
+.input-group button {
+     justify-self: center;
+     height: 20px;
+     width: 20px;
+     border-radius: 50%;
+     background-color: hsl(271, 36%, 24%);
+     border: none;
+}
+
+.input-group button span{
+     display: block;
+     width: 3px;
+     height: 8px;
+     background-color: hsl(270, 20%, 96%);
+     transform-origin: center;
+}
+
+.input-group button span:first-child {
+     transform:translateX(10px) translateY(2px) rotateZ(-220deg);
+}
+
+.input-group button span:last-child {
+     transform: translateX(10px) translateY(-2px) rotateZ(220deg);
+}
+
+.banner {
+     text-align: center;
+     padding: 20px;
+}
+
+.banner h1 {
+     margin-bottom: 30px;
+     color: hsl(271, 36%, 24%);
+}
+
+.banner p {
+     color: hsla(268, 7%, 64%, 0.64);
+     font-weight: 300;
+}
+
+
+@media screen and (min-width: 412px)
+{
+     .app-bg {
+          width: 40%;
+     }
+}
+
+@media screen and (min-width: 768px)
+{
+     .container{
+          display: grid;
+          grid-template-columns: 50% 50%;
+          align-items: center;
+     }
+
+     .app-bg {
+          width: 200px;
+     }
+
+     .chat-app {
+          left: 100px;
+     }
+
+     .banner {
+          text-align: left;
+     }
+}
+
+@media screen and (min-width: 1024px)
+{
+     .app{
+          height: 70vh;
+     }
+     .app-bg {
+          width: 80%;
+          height: 100%;
+          border-radius:0 0 50% 50%;
+          transform: translateX(-20%);
+          background-image: linear-gradient(to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+     }
+
+     .chat-app {
+          top: 20%;
+          left: 50%;
+     }
+
+}
+
+
+@media screen and (min-width: 1200px)
+{
+     .app{
+          height: 80vh;
+     }
+     .app-bg {
+          width: 75%;
+          height: 100%;
+          border-radius:0 0 50% 50%;
+          transform: translateX(-20%);
+     }
+
+     .chat-app {
+          top: 20%;
+          left: 50%;
+     }
+
+     .banner {
+          padding-right: 20% ;
+     }
+
+}
